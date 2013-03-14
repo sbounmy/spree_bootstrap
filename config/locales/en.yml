@@ -1,5 +1,22 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  spree:
+    address:
+      form:
+        address1:
+          placeholder: Address
+        address2:
+          placeholder: Addresse (additional)
+        city:
+          placeholder: City
+        firstname:
+          placeholder: Firstname
+        lastname:
+          placeholder: Lastname
+        phone:
+          placeholder: Phone
+        zipcode:
+          placeholder: Zip code
+    checkout:
+      payment:
+        coupon_code:
+          placeholder: Coupon code

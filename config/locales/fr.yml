@@ -13,7 +13,7 @@ fr:
         lastname:
           placeholder: Nom
         phone:
-          placeholder: Phone
+          placeholder: Téléphone
         zipcode:
           placeholder: Code Postal
     checkout:
