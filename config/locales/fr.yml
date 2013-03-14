@@ -1,0 +1,22 @@
+fr:
+  spree:
+    address:
+      form:
+        address1:
+          placeholder: Adresse
+        address2:
+          placeholder: Adresse (complément)
+        city:
+          placeholder: Ville
+        firstname:
+          placeholder: Prénom
+        lastname:
+          placeholder: Nom
+        phone:
+          placeholder: Phone
+        zipcode:
+          placeholder: Code Postal
+    checkout:
+      payment:
+        coupon_code:
+          placeholder: Code promo
