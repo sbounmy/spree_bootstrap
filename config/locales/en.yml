@@ -20,3 +20,10 @@ en:
       payment:
         coupon_code:
           placeholder: Coupon code
+
+    shared:
+      login:
+        email:
+          placeholder: Email
+        password:
+          placeholder: Password

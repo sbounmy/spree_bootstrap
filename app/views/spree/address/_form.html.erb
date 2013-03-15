@@ -20,12 +20,12 @@
     <%= form.text_field :address1, :class => 'required', :required => true, :placeholder => t('.address1.placeholder') %>
   </div>
   <div class="input-prepend field" id=<%="#{address_id}address2" %>>
-    <%= icon('screenshot', :class => 'add-on') %>
+    <%= icon('home', :class => 'add-on') %>
     <%= form.text_field :address2, :placeholder => t('.address2.placeholder') %>
   </div>
 
   <div class="input-prepend field" id=<%="#{address_id}city" %>>
-    <%= icon('home', :class => 'add-on') %>
+    <%= icon('map-marker', :class => 'add-on') %>
     <%= form.text_field :city, :class => 'required', :required => true, :placeholder => t('.city.placeholder') %>
   </div>
 

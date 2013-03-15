@@ -20,3 +20,9 @@ fr:
       payment:
         coupon_code:
           placeholder: Code promo
+    shared:
+      login:
+        email:
+          placeholder: Email
+        password:
+          placeholder: Mot de passe
