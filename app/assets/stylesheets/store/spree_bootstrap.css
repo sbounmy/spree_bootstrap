@@ -1,8 +1,4 @@
 /*
- *= require store/progress_bar
+ *= require_tree .
  *= require admin/plugins/font-awesome
 */
-
-#checkout-summary {
-  margin-top: 20px;
-}

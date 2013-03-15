@@ -1,0 +1,26 @@
+// shipping has checkbox 'use billing adress, we need different margin to align inputs
+
+#checkout-summary {
+  margin-top: 20px;
+}
+
+table[data-hook='order_summary'] td:first-child {
+  width: 60%;
+}
+
+form fieldset {
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+form legend {
+  border-bottom: none;
+}
+
+fieldset#shipping > legend {
+  margin-bottom: 0;
+}
+
+fieldset#billing > legend {
+  margin-bottom: 30px;
+}
