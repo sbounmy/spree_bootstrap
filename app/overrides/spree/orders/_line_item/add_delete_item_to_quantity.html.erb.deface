@@ -1,0 +1,3 @@
+<!-- insert_bottom '[data-hook="cart_item_quantity"]'-->
+
+<%= link_to image_tag('icons/delete.png'), '#', :class => 'delete', :id => "delete_#{dom_id(line_item)}" %>

@@ -1,0 +1,18 @@
+<div class="input-prepend field">
+  <%= icon('envelope', :class => 'add-on') %>
+  <%= f.email_field :email, :required => true, :placeholder => t('.email.placeholder') %>
+</div>
+
+<div id="password-credentials">
+  <div class="input-prepend field">
+    <%= icon('key', :class => 'add-on') %>
+    <%= f.password_field :password, :required => true, :placeholder => t('.password.placeholder') %>
+  </div>
+
+  <div class="input-prepend field">
+    <%= icon('key', :class => 'add-on') %>
+    <%= f.password_field :password_confirmation, :required => true, :placeholder => t('.password_confirmation.placeholder') %>
+  </div>
+</div>
+
+<div data-hook="signup_below_password_fields"></div>

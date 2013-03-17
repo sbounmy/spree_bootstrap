@@ -1,0 +1,3 @@
+add_to_attributes 'td.cart-item-total'
+
+attributes :class => 'text-right'

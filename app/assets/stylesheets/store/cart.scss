@@ -1,0 +1,15 @@
+#subtotal{
+  label, strong.text-right {
+    padding: 8px;
+  }
+}
+
+table {
+   td.cart-item-total, th.cart-item-total-header {
+    text-align: right;
+  }
+
+  input.line_item_quantity {
+    width: 48px;
+  }
+}

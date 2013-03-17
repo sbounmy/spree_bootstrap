@@ -1,0 +1,66 @@
+<% @body_id = 'cart' %>
+
+<h1><%= t(:shopping_cart) %></h1>
+
+<% if @order.line_items.empty? %>
+
+  <div data-hook="empty_cart">
+    <p><%= t(:your_cart_is_empty) %></p>
+    <p><%= link_to t(:continue_shopping), products_path, :class => 'button continue' %></p>
+  </div>
+
+<% else %>
+  <div data-hook="outside_cart_form">
+    <%= form_for @order, :url => update_cart_path, :html => {:id => 'update-cart'} do |order_form| %>
+      <div data-hook="inside_cart_form">
+
+        <div data-hook="cart_items">
+          <%= render :partial => 'form', :locals => { :order_form => order_form } %>
+        </div>
+
+        <div class='row-fluid'>
+          <div class='span12'>
+
+            <div class='span9' data-hook='cart_actions'>
+
+            </div>
+
+            <div class="span3">
+
+              <div id="subtotal" class='row-fluid'>
+                <div class='row-fluid'>
+                  <label class='span6'><%= t(:subtotal) %></label>
+                  <strong class="offset1 span5 order-total text-right"><%= @order.display_total %></strong>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row-fluid links" data-hook="cart_buttons">
+          <div class='form-actions'>
+            <%= button_tag :class => 'primary', :id => 'update-button' do %>
+              <%= t(:update) %>
+            <% end %>
+            <%= button_tag :class => 'pull-right btn checkout btn-primary', :id => 'checkout-link', :name => 'checkout' do %>
+              <%= t(:checkout) %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div id="empty-cart" data-hook>
+    <%= form_tag empty_cart_path, :method => :put do %>
+      <p id="clear_cart_link" data-hook>
+        <%= submit_tag t(:empty_cart), :class => 'button gray' %>
+        <%= t(:or) %>
+        <%= link_to t(:continue_shopping), products_path, :class => 'continue btn gray' %>
+      </p>
+    <% end %>
+  </div>
+
+<% end %>

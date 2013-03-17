@@ -1,6 +1,6 @@
 <%= form_for :user, :url => spree.user_session_path do |f| %>
 
-  <div id="password-credentials" class='well'>
+  <div id="password-credentials">
     <div class="input-prepend field">
       <%= icon('envelope', :class => 'add-on') %>
       <%= f.email_field :email, :class => 'required', :tabindex => 1, :size => '20', :required => true, :placeholder => t('.email.placeholder') %>
@@ -8,7 +8,7 @@
 
     <div class="input-prepend field">
       <%= icon('key', :class => 'add-on') %>
-      <%= f.password_field :password, :class => 'required', :tabindex => 2, :size => '20', :placeholder => t('.password.placeholder') %>
+      <%= f.password_field :password, :class => 'required', :tabindex => 2, :size => '20', :required => true, :placeholder => t('.password.placeholder') %>
     </div>
     <%= f.label :remember_me, f.check_box(:remember_me) + t(:remember_me), :class => 'checkbox' %>
 
@@ -19,7 +19,7 @@
       <small><%= link_to t(:forgot_password), spree.new_user_password_path %></small>
     </div>
 
-    <div class='offset3 span4'>
+    <div class='span4'>
       <%= f.submit t(:login), :class => 'btn btn-primary' %>
     </div>
   </div>

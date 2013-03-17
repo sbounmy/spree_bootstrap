@@ -1,0 +1,31 @@
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @user } %>
+
+<div id="registration" data-hook>
+  <div id="account" class="columns nine">
+    <!-- TODO: add partial with registration form -->
+  </div>
+  <% if Spree::Config[:allow_guest_checkout] %>
+    <div id="guest_checkout" data-hook>
+      <h2><%= t(:guest_user_account) %></h2>
+      <div class='row-fluid'>
+        <div class='span12 well'>
+          <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @order } %>
+          <div class='row-fluid'>
+            <div class='span5'>
+              <%= form_for @order, :url => update_checkout_registration_path, :method => :put, :html => { :id => 'checkout_form_registration', :class => 'form-inline' } do |f| %>
+              <div class="input-prepend field">
+                <%= icon('envelope', :class => 'add-on') %>
+                <%= f.email_field :email, :class => 'required', :tabindex => 1, :size => '20', :required => true, :placeholder => t('.email.placeholder') %>
+              </div>
+              <%= f.submit t(:continue), :class => 'btn btn-primary' %>
+              <% end %>
+            </div>
+            <div class='offset1 span6'>
+              <p><%= t('.guest_checkout') %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

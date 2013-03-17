@@ -1,0 +1,9 @@
+<!-- insert_top '#subtotal' -->
+
+<% @order.adjustments.eligible.each do |adjustment| %>
+  <% next if (adjustment.originator_type == 'Spree::TaxRate') and (adjustment.amount == 0) %>
+  <div class='row-fluid'>
+    <label class='span6'><%= adjustment.label %></label>
+    <strong class="offset1 span5 adjustment-total text-right"><%= money adjustment.amount %></strong>
+  </div>
+<% end %>
