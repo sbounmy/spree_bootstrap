@@ -6,3 +6,8 @@
 h1.product-title {
   font-size: 24px;
 }
+
+/* spree_wishlist */
+div#wishlist_header > div {
+  float: none;
+}

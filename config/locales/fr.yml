@@ -41,8 +41,15 @@ fr:
         password_confirmation:
           placeholder: Confirmation du mot de passe
         new_account: "Nouveau compte"
+    user_passwords:
+      new:
+        email:
+          placeholder: Email
     user_sessions:
       new:
         login: "Si vous possédez un compte, veuillez saisir votre email et votre mot de passe pour vous identifier."
         sign_up: "Si vous ne possédez pas de compte, cliquer sur 'Créer un compte' pour nous fournir plus de détails afin de rendre votre expérience sur HallyuStyle.com plus simple et agréable."
-
+    wishlists:
+      form:
+        name:
+          placeholder: Nom de liste
