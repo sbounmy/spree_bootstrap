@@ -1,2 +1,2 @@
 add_to_attributes 'table#cart-detail'
-attributes :class => 'table'
+attributes :class => 'table table-hover'
