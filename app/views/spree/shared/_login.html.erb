@@ -1,14 +1,16 @@
 <%= form_for :user, :url => spree.user_session_path do |f| %>
 
   <div id="password-credentials">
+    <%= f.label :email, t(:email) %>
     <div class="input-prepend field">
       <%= icon('envelope-alt', :class => 'add-on') %>
-      <%= f.email_field :email, :class => 'required', :tabindex => 1, :size => '20', :required => true, :placeholder => t('.email.placeholder') %>
+      <%= f.email_field :email, :class => 'required', :tabindex => 1, :size => '20', :required => true %>
     </div>
 
+    <%= f.label :password, t(:password) %>
     <div class="input-prepend field">
       <%= icon('key', :class => 'add-on') %>
-      <%= f.password_field :password, :class => 'required', :tabindex => 2, :size => '20', :required => true, :placeholder => t('.password.placeholder') %>
+      <%= f.password_field :password, :class => 'required', :tabindex => 2, :size => '20', :required => true %>
     </div>
     <%= f.label :remember_me, f.check_box(:remember_me) + t(:remember_me), :class => 'checkbox' %>
 

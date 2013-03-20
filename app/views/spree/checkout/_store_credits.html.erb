@@ -5,9 +5,9 @@
        :amount => number_to_currency(current_user.store_credits_total))%>
 </p>
 
+<%= label :store_credit_amount, t('enter_desired_amount_of_store_credit') %>
 <div class='input-append field'>
   <%= form.text_field :store_credit_amount, :size => 19, :value => usable_amount, :data => { :store_credit_maximum_amount => usable_amount, :store_credit_maximum_amount_message => t('store_credit_maximum_amount', :amount => number_to_currency(@order.store_credit_maximum_usable_amount)) },
-    :placeholder => t('enter_desired_amount_of_store_credit'),
     :class => 'input-small' %>
   <%= icon('money', :class => 'add-on') %>
 </div>

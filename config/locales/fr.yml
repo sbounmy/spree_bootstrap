@@ -1,55 +1,15 @@
 fr:
   spree:
-    address:
-      form:
-        address1:
-          placeholder: Adresse
-        address2:
-          placeholder: Adresse (complément)
-        city:
-          placeholder: Ville
-        firstname:
-          placeholder: Prénom
-        lastname:
-          placeholder: Nom
-        phone:
-          placeholder: Téléphone
-        zipcode:
-          placeholder: Code Postal
     checkout:
-      payment:
-        coupon_code:
-          placeholder: Code promo
       registration:
         create_account: "Créer un compte"
-        email:
-          placeholder: Email
         guest_checkout: "Lorsque vous effectuez un achat en tant qu'invité, un email de confirmation de votre commande sera envoyé à l'adresse e-mail que vous saisissez."
         login: "Si vous possédez un compte, veuillez saisir votre email et votre mot de passe pour vous identifier."
         sign_up: "Si vous ne possédez pas de compte, cliquer sur 'Créer un compte' pour nous fournir plus de détails afin de rendre votre expérience sur HallyuStyle.com plus simple et agréable."
     shared:
-      login:
-        email:
-          placeholder: Email
-        password:
-          placeholder: Mot de passe
-      user_form:
-        email:
-          placeholder: Email
-        password:
-          placeholder: Mot de passe
-        password_confirmation:
-          placeholder: Confirmation du mot de passe
         new_account: "Nouveau compte"
-    user_passwords:
-      new:
-        email:
-          placeholder: Email
     user_sessions:
       new:
+        create_account: "Créer un compte"
         login: "Si vous possédez un compte, veuillez saisir votre email et votre mot de passe pour vous identifier."
         sign_up: "Si vous ne possédez pas de compte, cliquer sur 'Créer un compte' pour nous fournir plus de détails afin de rendre votre expérience sur HallyuStyle.com plus simple et agréable."
-    wishlists:
-      form:
-        name:
-          placeholder: Nom de liste

@@ -1,55 +1,14 @@
 en:
   spree:
-    address:
-      form:
-        address1:
-          placeholder: Address
-        address2:
-          placeholder: Addresse (additional)
-        city:
-          placeholder: City
-        firstname:
-          placeholder: Firstname
-        lastname:
-          placeholder: Lastname
-        phone:
-          placeholder: Phone
-        zipcode:
-          placeholder: Zip code
     checkout:
-      payment:
-        coupon_code:
-          placeholder: Coupon code
       registration:
         create_account: "Create an account"
-        email:
-          placeholder: Email
         guest_checkout: "When using guest checkout, a confirmation email will be sent to your email "
         login: "If you already own an account, please sign up using your email and password"
         sign_up: "If you don't have an account yet, enjoy your experience on HallyuStyle.com by creating an account. This will allow you to track your orders, organize your wishlist and more"
     shared:
-      login:
-        email:
-          placeholder: Email
-        password:
-          placeholder: Password
-      user_form:
-        email:
-          placeholder: Email
-        password:
-          placeholder: Password
-        password_confirmation:
-          placeholder: Password confirmation
         new_account: "New account"
-    user_passwords:
-      new:
-        email:
-          placeholder: Email
     user_sessions:
       new:
         login: "If you already own an account, please sign up using your email and password"
         sign_up: "If you don't have an account, enjoy your experience on HallyuStyle.com by creating an account. This will allow you to track your orders, organize your wishlist and more"
-    wishlists:
-      form:
-        name:
-          placeholder: Wishlist name
