@@ -11,3 +11,11 @@ h1.product-title {
 div#wishlist_header > div {
   float: none;
 }
+
+/* spree_core */
+
+ul#products {
+  li.thumbnail:hover {
+    border-color: #333333;
+  }
+}

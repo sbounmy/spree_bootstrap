@@ -1,9 +1,11 @@
 <% address_id = address_type.chars.first %>
 <div class="inner" data-hook=<%="#{address_type}_inner" %>>
+  <%= form.label :firstname %>
   <div class="input-prepend field" id=<%="#{address_id}firstname" %>>
     <%= icon('user', :class => 'add-on') %>
     <%= form.text_field :firstname, :class => 'required', :required => true, :placeholder => t('.firstname.placeholder') %>
   </div>
+  <%= form.label :lastname %>
   <div class="input-prepend field" id=<%="#{address_id}lastname" %>>
     <%= icon('user', :class => 'add-on') %>
     <%= form.text_field :lastname, :class => 'required', :required => true, :placeholder => t('.lastname.placeholder') %>
@@ -15,25 +17,32 @@
       <%= form.text_field :company %>
     </p>
   <% end %>
+
+  <%= form.label :address1 %>
   <div class="input-prepend field" id=<%="#{address_id}address1" %>>
     <%= icon('road', :class => 'add-on') %>
     <%= form.text_field :address1, :class => 'required', :required => true, :placeholder => t('.address1.placeholder') %>
   </div>
+
+  <%= form.label :address2 %>
   <div class="input-prepend field" id=<%="#{address_id}address2" %>>
     <%= icon('home', :class => 'add-on') %>
     <%= form.text_field :address2, :placeholder => t('.address2.placeholder') %>
   </div>
 
+  <%= form.label :city %>
   <div class="input-prepend field" id=<%="#{address_id}city" %>>
     <%= icon('map-marker', :class => 'add-on') %>
     <%= form.text_field :city, :class => 'required', :required => true, :placeholder => t('.city.placeholder') %>
   </div>
 
+  <%= form.label :zipcode %>
   <div class="input-prepend field" id=<%="#{address_id}zipcode" %>>
     <%= icon('envelope', :class => 'add-on') %>
     <%= form.text_field :zipcode, :class => 'required', :required => true, :placeholder => t('.zipcode.placeholder') %>
   </div>
 
+  <%= form.label :country_id %>
   <div class="input-prepend field" id=<%="#{address_id}country" %>>
     <%= icon('globe', :class => 'add-on') %>
 
@@ -67,6 +76,7 @@
       </noscript>
   <% end %>
 
+  <%= form.label :phone %>
   <div class="input-prepend field" id=<%="#{address_id}phone" %>>
     <%= icon('phone', :class => 'add-on') %>
     <%= form.phone_field :phone, :class => 'required', :required => true,  :placeholder => t('.phone.placeholder')  %>
