@@ -5,6 +5,7 @@
 
 h1.product-title {
   font-size: 24px;
+  margin-top: 0;
 }
 
 /* spree_wishlist */
