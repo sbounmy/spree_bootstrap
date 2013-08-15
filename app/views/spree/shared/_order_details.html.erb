@@ -29,7 +29,7 @@
     <h6><%= t(:payment_information) %> <%= link_to "(#{t(:edit)})", checkout_state_path(:payment) unless @order.completed? %></h6>
     <div class="payment-info">
       <% if order.credit_cards.empty? %>
-        <%= content_tag(:span, order.payment.payment_method.name) if order.payment %>
+        <%= content_tag(:span, order.payments.first.payment_method.name) if order.payment %>
       <% else %>
         <span class="cc-type">
           <% unless (cc_type = order.credit_cards.first.cc_type).blank? %>
