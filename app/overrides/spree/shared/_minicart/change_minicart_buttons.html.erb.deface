@@ -1,3 +1,3 @@
-<!-- replace "code[erb-loud]:contains('link_to t(:checkout), checkout_path')" -->
+<!-- replace "code[erb-loud]:contains('link_to Spree.t(:checkout), checkout_path')" -->
 
-<%= link_to t(:checkout), checkout_path, :id => 'checkout-link', :class => 'btn btn-primary checkout' %>
+<%= link_to Spree.t(:checkout), checkout_path, :id => 'checkout-link', :class => 'btn btn-primary checkout' %>

@@ -1,12 +1,12 @@
 <% @body_id = 'cart' %>
 
-<h1><%= t(:shopping_cart) %></h1>
+<h1><%= Spree.t(:shopping_cart) %></h1>
 
 <% if @order.line_items.empty? %>
 
   <div data-hook="empty_cart">
-    <p><%= t(:your_cart_is_empty) %></p>
-    <p><%= link_to t(:continue_shopping), products_path, :class => 'button continue' %></p>
+    <p><%= Spree.t(:your_cart_is_empty) %></p>
+    <p><%= link_to Spree.t(:continue_shopping), products_path, :class => 'button continue' %></p>
   </div>
 
 <% else %>
@@ -29,7 +29,7 @@
 
               <div id="subtotal" class='row-fluid'>
                 <div class='row-fluid'>
-                  <label class='span6'><%= t(:subtotal) %></label>
+                  <label class='span6'><%= Spree.t(:subtotal) %></label>
                   <strong class="offset1 span5 order-total text-right"><%= @order.display_total %></strong>
                 </div>
               </div>
@@ -42,10 +42,10 @@
         <div class="row-fluid links" data-hook="cart_buttons">
           <div class='form-actions'>
             <%= button_tag :class => 'primary', :id => 'update-button' do %>
-              <%= t(:update) %>
+              <%= Spree.t(:update) %>
             <% end %>
             <%= button_tag :class => 'pull-right btn checkout btn-primary', :id => 'checkout-link', :name => 'checkout' do %>
-              <%= t(:checkout) %>
+              <%= Spree.t(:checkout) %>
             <% end %>
           </div>
         </div>
@@ -56,9 +56,9 @@
   <div id="empty-cart" data-hook>
     <%= form_tag empty_cart_path, :method => :put do %>
       <p id="clear_cart_link" data-hook>
-        <%= submit_tag t(:empty_cart), :class => 'button gray' %>
-        <%= t(:or) %>
-        <%= link_to t(:continue_shopping), products_path, :class => 'continue btn gray' %>
+        <%= submit_tag Spree.t(:empty_cart), :class => 'button gray' %>
+        <%= Spree.t(:or) %>
+        <%= link_to Spree.t(:continue_shopping), products_path, :class => 'continue btn gray' %>
       </p>
     <% end %>
   </div>

@@ -1,16 +1,16 @@
 <div id="forgot-password">
-  <h6><%= t(:forgot_password) %></h6>
+  <h6><%= Spree.t(:forgot_password) %></h6>
 
-  <p><%= t(:instructions_to_reset_password) %></p>
+  <p><%= Spree.t(:instructions_to_reset_password) %></p>
 
   <%= form_for Spree::User.new, :as => :spree_user, :url => spree.spree_user_password_path do |f| %>
-    <%= f.label :email, t(:email) %>
+    <%= f.label :email, Spree.t(:email) %>
     <div class="input-prepend">
       <%= icon('envelope-alt', :class => 'add-on') %>
       <%= f.email_field :email, :class => 'required', :required => true %>
     </div>
     <div>
-      <%= f.submit t(:reset_password), :class => 'btn btn-primary' %>
+      <%= f.submit Spree.t(:reset_password), :class => 'btn btn-primary' %>
     </div>
   <% end %>
 </div>

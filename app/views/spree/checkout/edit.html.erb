@@ -7,7 +7,7 @@
   <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @order } %>
 
   <div class="row-fluid" data-hook="checkout_header">
-    <!-- <h1 class="span3" data-hook="checkout_title"><%= t(:checkout) %></h1> -->
+    <!-- <h1 class="span3" data-hook="checkout_title"><%= Spree.t(:checkout) %></h1> -->
     <div class="span12" data-hook="checkout_progress">
       <div id='progress-steps-container' class='well span12'><%= checkout_progress %></div>
     </div>

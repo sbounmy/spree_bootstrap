@@ -1,13 +1,13 @@
 <% if (current_user && current_user.store_credits_total > 0) %>
 <% usable_amount = number_with_precision(@order.store_credit_maximum_usable_amount, :precision => 2, :separator => '.', :delimiter => '') %>
 <br style='clear:both;' />
-<p><%= t('you_have_store_credit',
+<p><%= Spree.t('you_have_store_credit',
        :amount => number_to_currency(current_user.store_credits_total))%>
 </p>
 
-<%= label :store_credit_amount, t('enter_desired_amount_of_store_credit') %>
+<%= label :store_credit_amount, Spree.t('enter_desired_amount_of_store_credit') %>
 <div class='input-append field'>
-  <%= form.text_field :store_credit_amount, :size => 19, :value => usable_amount, :data => { :store_credit_maximum_amount => usable_amount, :store_credit_maximum_amount_message => t('store_credit_maximum_amount', :amount => number_to_currency(@order.store_credit_maximum_usable_amount)) },
+  <%= form.text_field :store_credit_amount, :size => 19, :value => usable_amount, :data => { :store_credit_maximum_amount => usable_amount, :store_credit_maximum_amount_message => Spree.t('store_credit_maximum_amount', :amount => number_to_currency(@order.store_credit_maximum_usable_amount)) },
     :class => 'input-small' %>
   <%= icon('money', :class => 'add-on') %>
 </div>

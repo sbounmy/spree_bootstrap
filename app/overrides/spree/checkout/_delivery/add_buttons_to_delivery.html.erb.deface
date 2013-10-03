@@ -1,0 +1,5 @@
+<!-- replace '[data-hook="buttons"]' -->
+
+<div class="form-buttons well" data-hook="buttons">
+  <%= submit_tag Spree.t(:save_and_continue), :class => 'continue btn btn-primary' %>
+</div>

@@ -1,28 +1,28 @@
 <%= form_for Spree::User.new, :as => :spree_user, :url => spree.spree_user_session_path do |f| %>
 
   <div id="password-credentials">
-    <%= f.label :email, t(:email) %>
+    <%= f.label :email %>
     <div class="input-prepend field">
       <%= icon('envelope-alt', :class => 'add-on') %>
       <%= f.email_field :email, :class => 'required', :tabindex => 1, :size => '20', :required => true %>
     </div>
 
-    <%= f.label :password, t(:password) %>
+    <%= f.label :password %>
     <div class="input-prepend field">
       <%= icon('key', :class => 'add-on') %>
       <%= f.password_field :password, :class => 'required', :tabindex => 2, :size => '20', :required => true %>
     </div>
-    <%= f.label :remember_me, f.check_box(:remember_me) + t(:remember_me), :class => 'checkbox' %>
+    <%= f.label :remember_me, f.check_box(:remember_me) + Spree.t(:remember_me), :class => 'checkbox' %>
 
   </div>
 
   <div class='row-fluid'>
     <div class='span5'>
-      <small><%= link_to t(:forgot_password), spree.new_spree_user_password_path %></small>
+      <small><%= link_to Spree.t(:forgot_password), spree.new_spree_user_password_path %></small>
     </div>
 
     <div class='span4'>
-      <%= f.submit t(:login), :class => 'btn btn-primary' %>
+      <%= f.submit Spree.t(:login), :class => 'btn btn-primary' %>
     </div>
   </div>
 <% end %>

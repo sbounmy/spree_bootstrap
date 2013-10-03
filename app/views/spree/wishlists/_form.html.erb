@@ -1,13 +1,13 @@
-<%= form.label :name, t(:name) %>
+<%= form.label :name, Spree.t(:name) %>
 <div class="input-prepend field">
   <%= icon('star', :class => 'add-on') %>
-  <%= form.text_field :name, :placeholder => t('.name.placeholder') %>
+  <%= form.text_field :name, :placeholder => Spree.t('.name.placeholder') %>
 </div>
 
 <div class="field">
-  <%= form.label :is_private, form.check_box(:is_private) + t(:is_private), :class => 'checkbox' %>
+  <%= form.label :is_private, form.check_box(:is_private) + Spree.t(:is_private), :class => 'checkbox' %>
 </div>
 
 <div class="field">
-  <%= form.label :is_default, form.check_box(:is_default) + t(:is_default), :class => 'checkbox' %>
+  <%= form.label :is_default, form.check_box(:is_default) + Spree.t(:is_default), :class => 'checkbox' %>
 </div>

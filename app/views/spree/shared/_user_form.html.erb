@@ -1,17 +1,17 @@
 <div class="input-prepend field">
-  <%= f.label :email, t(:email) %>
+  <%= f.label :email %>
   <%= icon('envelope', :class => 'add-on') %>
   <%= f.email_field :email, :required => true %>
 </div>
 
 <div id="password-credentials">
-  <%= f.label :password, t(:password) %>
+  <%= f.label :password %>
   <div class="input-prepend field">
     <%= icon('key', :class => 'add-on') %>
     <%= f.password_field :password, :required => true %>
   </div>
 
-  <%= f.label :password_confirmation, t(:password_confirmation) %>
+  <%= f.label :password_confirmation %>
   <div class="input-prepend field">
     <%= icon('key', :class => 'add-on') %>
     <%= f.password_field :password_confirmation, :required => true %>

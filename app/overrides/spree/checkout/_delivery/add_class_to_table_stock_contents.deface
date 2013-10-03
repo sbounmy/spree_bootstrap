@@ -1,0 +1,2 @@
+add_to_attributes '[data-hook="stock-contents"]'
+attributes :class => 'table table-hover'
